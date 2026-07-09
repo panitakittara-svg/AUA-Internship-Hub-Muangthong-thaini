@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AUA Internship Hub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet"
+href="login.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="login-wrapper">
+
+<div class="logo-area">
+
+<img
+src="Images/logo.png"
+class="logo"
+alt="AUA Logo">
+
+<h1>
+
+<span class="blue">
+
+AUA
+
+</span>
+
+<span>
+
+Internship Hub
+
+</span>
+
+</h1>
+
+<p>
+
+Please sign in to continue
+
+</p>
+
+</div>
+
+<form id="loginForm">
+
+<div class="form-group">
+
+<label>Email</label>
+
+<div class="input-box">
+
+<i class="fa-regular fa-envelope"></i>
+
+<input
+
+type="email"
+
+id="email"
+
+placeholder="Enter your email"
+
+required>
+
+</div>
+
+</div>
+<div class="form-group">
+
+<label>Password</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input
+
+type="password"
+
+id="password"
+
+placeholder="Enter your password"
+
+required>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>Login As</label>
+
+<div class="role-grid">
+
+<label class="role-card">
+
+<input
+
+type="radio"
+
+name="role"
+
+value="admin"
+
+checked>
+
+<div class="role-content">
+
+<i class="fa-solid fa-user-shield role-icon"></i>
+
+<div>
+
+<h3>Admin</h3>
+
+<p>Administrator</p>
+
+</div>
+
+</div>
+
+</label>
+
+<label class="role-card">
+
+<input
+
+type="radio"
+
+name="role"
+
+value="intern">
+
+<div class="role-content">
+
+<i class="fa-solid fa-user-graduate role-icon"></i>
+
+<div>
+
+<h3>Intern</h3>
+
+<p>Internship Student</p>
+
+</div>
+
+</div>
+
+</label>
+
+</div>
+
+</div>
+
+<p
+id="errorMessage"
+class="error-message">
+
+</p>
+<button
+type="submit"
+class="login-btn">
+
+<span>
+
+Login
+
+</span>
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</form>
+
+<div class="secure-login">
+
+<div class="secure-line"></div>
+
+<div class="secure-text">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<span>
+
+Secure Login
+
+</span>
+
+</div>
+
+<div class="secure-line"></div>
+
+</div>
+</div>
+
+</div>
+
+<script src="login.js"></script>
+.logo img{
+
+filter:
+drop-shadow(0 0 6px rgba(255,255,255,.60))
+drop-shadow(0 0 15px rgba(255,255,255,.40));
+
+}

@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+AUA Internship Hub
+
+</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img
+src="Images/logo.png"
+class="logo-img"
+alt="AUA Logo">
+
+<h2>
+
+AUA Internship Hub
+
+</h2>
+
+<p>
+
+Internship Management System
+
+</p>
+
+</div>
+
+<nav>
+
+<ul class="menu">
+
+<li class="active">
+
+<a href="#dashboard">
+
+<i class="fa-solid fa-house"></i>
+
+<span>
+
+Dashboard
+
+</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#course">
+
+<i class="fa-solid fa-box"></i>
+
+<span>
+
+Product
+
+</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#task">
+
+<i class="fa-solid fa-list-check"></i>
+
+<span>
+
+Task
+
+</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#important">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<span>
+
+Important Date
+
+</span>
+
+</a>
+
+</li>
+
+<li>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>
+
+Logout
+
+</span>
+
+</button>
+
+</li>
+
+</ul>
+
+</nav>
+
+</aside>
+
+<!-- ================= CONTENT ================= -->
+
+<main class="content">
+
+<section id="dashboard">
+  <!-- ================= WELCOME ================= -->
+
+<div class="welcome-card">
+
+<h1>
+
+Welcome to
+
+<span>
+
+AUA Internship Hub
+
+</span>
+
+</h1>
+
+<p>
+
+Internship Information System
+
+</p>
+
+</div>
+
+<!-- ================= ANNOUNCEMENT ================= -->
+
+<div class="section-title">
+
+<h2>
+
+Announcement
+
+</h2>
+
+<p>
+
+Latest News
+
+</p>
+
+</div>
+
+<div class="announcement-card">
+
+<div class="announcement-image">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+</div>
+
+<div class="announcement-content">
+
+<span class="badge">
+
+NEW
+
+</span>
+
+<h2>
+
+Welcome Interns
+
+</h2>
+
+<p>
+
+Please check your internship tasks and important dates regularly.
+
+</p>
+
+<button class="primary-btn">
+
+View All
+
+</button>
+
+</div>
+
+</div>
+<!-- ================= PRODUCT ================= -->
+
+<section id="course">
+
+<div class="section-title">
+
+<h2>
+
+Product
+
+</h2>
+
+<p>
+
+AUA Products
+
+</p>
+
+</div>
+
+<div class="placement-card">
+
+<div class="placement-icon">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+</div>
+
+<div>
+
+<h3>
+
+Oxford Placement Test
+
+</h3>
+
+<p>
+
+All new students are required to take the Oxford Placement Test before enrolling.
+
+</p>
+
+<strong>
+
+Placement Test Fee : 600 THB
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="course-grid">
+
+<!-- Young Learners -->
+
+<div class="course-card" onclick="openModal('young')">
+
+<div class="course-image">
+
+<i class="fa-solid fa-child-reaching"></i>
+
+<span class="course-tag">
+
+Age 9–11
+
+</span>
+
+</div>
+
+<div class="course-body">
+
+<h3>
+
+English for Young Learners
+
+</h3>
+
+<p>
+
+Develop English through enjoyable activities while improving listening, speaking, reading and writing skills.
+
+</p>
+
+<button class="primary-btn">
+
+View Details
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Junior -->
+
+<div class="course-card" onclick="openModal('junior')">
+
+<div class="course-image">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<span class="course-tag">
+
+Age 12–14
+
+</span>
+
+</div>
+
+<div class="course-body">
+
+<h3>
+
+Junior English for Communication
+
+</h3>
+
+<p>
+
+Improve communication skills and build confidence using English in everyday situations.
+
+</p>
+
+<button class="primary-btn">
+
+View Details
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</div>
+<!-- English for Communication -->
+
+<div class="course-card" onclick="openModal('communication')">
+
+<div class="course-image">
+
+<i class="fa-solid fa-comments"></i>
+
+<span class="course-tag">
+
+Age 15+
+
+</span>
+
+</div>
+
+<div class="course-body">
+
+<h3>
+
+English for Communication
+
+</h3>
+
+<p>
+
+Develop practical English skills for speaking, listening, reading and writing.
+
+</p>
+
+<button class="primary-btn">
+
+View Details
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Business -->
+
+<div class="course-card" onclick="openModal('business')">
+
+<div class="course-image">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<span class="course-tag">
+
+B1+
+
+</span>
+
+</div>
+
+<div class="course-body">
+
+<h3>
+
+English for Business
+
+</h3>
+
+<p>
+
+Professional English for meetings, presentations, business emails and workplace communication.
+
+</p>
+
+<button class="primary-btn">
+
+View Details
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= TASK ================= -->
+
+<section id="task">
+
+<div class="section-title">
+
+<h2>
+
+My Tasks
+
+</h2>
+
+<p>
+
+Manage Internship Tasks
+
+</p>
+
+</div>
+
+<div class="task-header">
+
+<button
+id="addTaskBtn"
+class="primary-btn">
+
+<i class="fa-solid fa-plus"></i>
+
+Add Task
+
+</button>
+
+</div>
+
+<div
+id="taskList"
+class="task-grid">
+
+<div class="task-card">
+
+<div class="task-top">
+
+<h3>
+
+Prepare Teaching Materials
+
+</h3>
+
+<span class="priority medium">
+
+Medium
+
+</span>
+
+</div>
+
+<p>
+
+Prepare learning materials for next week's English class.
+
+</p>
+
+<div class="task-footer">
+
+<div>
+
+<strong>
+
+20 July 2026
+
+</strong>
+
+<small>
+
+Deadline
+
+</small>
+
+</div>
+
+<div class="status">
+
+To Do
+
+</div>
+
+</div>
+
+<div class="task-action">
+
+<button class="edit-btn">
+
+<i class="fa-solid fa-pen"></i>
+
+Edit
+
+</button>
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= IMPORTANT DATE ================= -->
+
+<section id="important">
+
+<div class="section-title">
+
+<h2>
+
+Important Dates
+
+</h2>
+
+<p>
+
+Internship Schedule
+
+</p>
+
+</div>
+
+<div class="calendar-top">
+
+<button
+id="addEventBtn"
+class="primary-btn">
+
+<i class="fa-solid fa-calendar-plus"></i>
+
+Add Important Date
+
+</button>
+
+</div>
+
+<div class="calendar-wrapper">
+
+<div class="event-card">
+
+<h3>
+
+Upcoming Events
+
+</h3>
+
+<ul id="eventList">
+
+<li>
+
+<strong>
+
+10 Jul 2026
+
+</strong>
+
+<br>
+
+Orientation
+
+</li>
+
+<li>
+
+<strong>
+
+15 Jul 2026
+
+</strong>
+
+<br>
+
+Meeting with Mentor
+
+</li>
+
+<li>
+
+<strong>
+
+15 Aug 2026
+
+</strong>
+
+<br>
+
+Mid Evaluation
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="calendar-card">
+
+<div id="calendar"></div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= TASK MODAL ================= -->
+
+<div id="taskModal" class="modal">
+
+<div class="modal-box">
+
+<span
+class="close"
+onclick="closeTaskModal()">
+
+<i class="fa-solid fa-xmark"></i>
+
+</span>
+
+<h2>
+
+Task Information
+
+</h2>
+
+<div class="form-group">
+
+<label>
+
+Task Name
+
+</label>
+
+<input
+type="text"
+id="taskTitle">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Deadline
+
+</label>
+
+<input
+type="date"
+id="taskDeadline">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Priority
+
+</label>
+
+<select id="taskPriority">
+
+<option>Low</option>
+
+<option selected>Medium</option>
+
+<option>High</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Status
+
+</label>
+
+<select id="taskStatus">
+
+<option>To Do</option>
+
+<option>In Progress</option>
+
+<option>Completed</option>
+
+</select>
+
+</div>
+
+<div class="modal-buttons">
+
+<button
+class="cancel-btn"
+onclick="closeTaskModal()">
+
+Cancel
+
+</button>
+
+<button
+class="primary-btn"
+id="saveTask">
+
+Save
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<!-- ================= IMPORTANT DATE MODAL ================= -->
+
+<div id="eventModal" class="modal">
+
+<div class="modal-box">
+
+<span
+class="close"
+onclick="closeEventModal()">
+
+<i class="fa-solid fa-xmark"></i>
+
+</span>
+
+<h2>
+
+Important Date
+
+</h2>
+
+<div class="form-group">
+
+<label>
+
+Title
+
+</label>
+
+<input
+type="text"
+id="eventTitle">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Date
+
+</label>
+
+<input
+type="date"
+id="eventDate">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Time
+
+</label>
+
+<input
+type="time"
+id="eventTime">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+id="eventDescription"
+rows="4"></textarea>
+
+</div>
+
+<div class="modal-buttons">
+
+<button
+class="cancel-btn"
+onclick="closeEventModal()">
+
+Cancel
+
+</button>
+
+<button
+class="primary-btn"
+id="saveEvent">
+
+Save
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<!-- ================= COURSE MODAL ================= -->
+
+<div id="courseModal" class="modal">
+
+<div class="modal-box course-modal">
+
+<span
+class="close"
+onclick="closeModal()">
+
+<i class="fa-solid fa-xmark"></i>
+
+</span>
+
+<div id="modalBody">
+
+<!-- dashboard.js จะใส่รายละเอียดคอร์สตรงนี้ -->
+
+</div>
+
+</div>
+
+</div>
+</main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+
+<script type="module" src="dashboard.js"></script>
+
+<script type="module" src="auth.js"></script>
+
+</body>
+
+</html>
